@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilingual Sign-Up Page</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <!-- Sign-Up Form -->
+    <div id="signup-container" class="container">
+        <h2>Sign Up / साइन अप</h2>
+        <form id="signup-form" action="try.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name / नाम</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name / आपका नाम भरें" required>
+                <div class="error" id="name-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number / फ़ोन नंबर</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number / आपका फ़ोन नंबर भरें"
+                    required>
+                <div class="error" id="phone-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="password">Password / पासवर्ड</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password"
+                        placeholder="Enter your password / आपका पासवर्ड भरें" required>
+                    <span class="toggle-password" onclick="togglePassword('password', 'toggle-icon1')">
+                        <i id="toggle-icon1" class="fa fa-eye"></i>
+                    </span>
+                </div>
+                <div class="error" id="password-error"></div>
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password / पासवर्ड पुष्टि</label>
+                <div class="password-container">
+                    <input type="password" id="confirm-password" name="confirm-password"
+                        placeholder="Confirm your password / आपके पासवर्ड पुष्टि करें" required>
+                    <span class="toggle-password" onclick="togglePassword('confirm-password', 'toggle-icon2')">
+                        <i id="toggle-icon2" class="fa fa-eye"></i>
+                    </span>
+                </div>
+                <div class="error" id="confirm-password-error"></div>
+            </div>
+            <button type="submit" class="btn">Sign Up / साइन अप</button>
+        </form>
+        <div class="switch">
+            <p>Already have an account ? / क्या आपके पास खाता है ? <a href="login.html"> Log In</a></p>
+        </div>
+    </div>
+
+    <script src="indexscript.js"></script>
+</body>
+
+</html>in
